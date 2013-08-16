@@ -1,0 +1,3 @@
+============================================================================
+Your new Rails application is ready to go.  
+Please scroll up for important messages from installed generators.
