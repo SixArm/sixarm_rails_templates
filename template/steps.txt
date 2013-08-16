@@ -1,5 +1,7 @@
+unversion_database_yml
 get_gitignore_by_github
 get_gitignore_by_sixarm
 get_gitignore
 get_gemfile
+get_database_yml
 bundle_install

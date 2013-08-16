@@ -25,9 +25,11 @@ To use our template:
 
 Steps are small pieces of code that prompt you then do an action:
 
-  * git_ignore: get a .gitgnore file e.g. from an existing Rails project
-  * git_ignore_by_github: get the .gitgnore file maintained by the GitHub team
-  * git_ignore_by_sixarm: get the .gitgnore file maintained by the SixArm team
+  * unversion_database_yml: remove config/database.yml file from git
+  * get_gitignore: get a .gitgnore file e.g. from an existing Rails project
+  * get_gitignore_by_github: get the .gitgnore file maintained by the GitHub team
+  * get_gitignore_by_sixarm: get the .gitgnore file maintained by the SixArm team
+  * get_database_yml: gets config/database.yml from any location
   * gemfile: get a Gemfile e.g. from an existing Rails project
   * bundle_install: configure the command e.g. bundle install --path vendor/bundle
 
@@ -49,6 +51,8 @@ To learn more about Rails::Generators::Actions:
 
 ## Changes
 
+* 2013-08-16 1.0.5 New step: 'get_database_yml' gets config/database.yml from any location
+* 2013-08-16 1.0.4 New step: 'unversion_database_yml' to remove config/database.yml from git
 * 2013-08-15 1.0.3 New step: 'bundle_install' configures the command
 * 2013-08-15 1.0.2 New step: 'gemfile' gets Gemfile from any location
 * 2013-08-15 1.0.1 New step: 'git_ignore' gets .gitignore files from GitHub, SixArm, etc.
