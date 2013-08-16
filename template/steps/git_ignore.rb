@@ -1,5 +1,5 @@
 def git_ignore?
-  ask "Get any .gitignore file from any location? [Example: http://example.com/.gitignore] (y/n)"
+  ask "Get any .gitignore file from any location? [Example: http://example.com/.gitignore] (any)"
 end
 
 def git_ignore!
