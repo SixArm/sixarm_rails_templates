@@ -1,5 +1,5 @@
-git_ignore_by_github
-git_ignore_by_sixarm
-git_ignore
-gemfile
+get_gitignore_by_github
+get_gitignore_by_sixarm
+get_gitignore
+get_gemfile
 bundle_install
