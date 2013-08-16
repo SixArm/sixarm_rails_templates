@@ -38,7 +38,8 @@ To learn more about Rails::Generators::Actions:
 
 ## Changes
 
-* 2013-08-16 1.0.2 New step: 'gemfile' gets Gemfile from any location
+* 2013-08-15 1.0.3 New step: 'bundle_install' configures the command
+* 2013-08-15 1.0.2 New step: 'gemfile' gets Gemfile from any location
 * 2013-08-15 1.0.1 New step: 'git_ignore' gets .gitignore files from GitHub, SixArm, etc.
 * 2013-08-14 1.0.0 Publish
 

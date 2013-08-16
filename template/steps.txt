@@ -2,3 +2,4 @@ git_ignore_by_github
 git_ignore_by_sixarm
 git_ignore
 gemfile
+bundle_install
