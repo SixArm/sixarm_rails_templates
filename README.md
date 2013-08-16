@@ -21,6 +21,17 @@ To use our template:
     rails new demo -m http://github.com/sixarm/sixarm_rails_templates/raw/master/template.rb
 
 
+## Steps
+
+Steps are small pieces of code that prompt you then do an action:
+
+  * git_ignore: get a .gitgnore file e.g. from an existing Rails project
+  * git_ignore_by_github: get the .gitgnore file maintained by the GitHub team
+  * git_ignore_by_sixarm: get the .gitgnore file maintained by the SixArm team
+  * gemfile: get a Gemfile e.g. from an existing Rails project
+  * bundle_install: configure the command e.g. bundle install --path vendor/bundle
+
+
 ## Related
   
 To learn more about Rails templates:
