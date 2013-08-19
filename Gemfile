@@ -193,7 +193,7 @@ group :renderers do
   gem 'rghost'  # Ruby Ghostscript Engine is a document creation and conversion API.
 end
 
-gem :controllers do
+group :controllers do
   gem 'activeadmin', :require => 'sass-rails'  # Admistration framework.
   gem 'arel'  # Arel is a SQL Abstract Syntax Tree (AST) manager for Ruby.
   gem 'cancan'  # Simple authorization solution for Rails decoupled from roles.
@@ -455,7 +455,7 @@ group :minitest do
   gem 'sixarm_ruby_minitest_extensions', '= 1.0.5'  # Minitest extra methods for common use cases.
 end
 
-group :rspec 
+group :rspec do 
   gem 'rspec'  # Behavior Driven Development (BDD) for Ruby
   gem 'rspec-core'  # RSpec runner and example groups.
   gem 'rspec-expectations'  # RSpec matchers for should and should_not.
@@ -613,7 +613,7 @@ group :debug do
   gem 'rubygems-test'  # Commands for testing gems and reporting results.
 end
 
-group :documentation do
+group :doc do
   gem 'bdoc', '>= 0.3.8', require:false  # Local gem documentation browser.
   gem 'rdoc', '>= 4.0.1', require:false  # Default documentation generation tool for Ruby code.
   #gem 'sdoc'  # An rdoc generator for html with javascript search index. [depends on older rdoc]
@@ -646,7 +646,7 @@ group :servers do
   gem 'unicorn'  # Ruby web server that is secure, stable, fast and extensible.
 end
 
-group :vitals do
+group :vital do
   gem 'airbrake'  # Send application errors to hosted service; formerly Hoptoad.
   gem 'exception_notification', :require => 'exception_notifier'  # Email us any Ruby exception.
   gem 'hitimes'  # Fast, high resolution timer library for recording performance metrics.
@@ -683,7 +683,7 @@ group :sixarm do
   gem 'sixarm_ruby_to_id', '= 1.0.8'  # Typecast and santize an object to and id or uuid.
 end
 
-group :sixarm_testing
+group :sixarm_testing do
   gem 'sixarm_ruby_fab', '= 1.0.2'  # Fabricate sample data suitable for testing.
   gem 'sixarm_ruby_minitest_extensions', '= 1.0.5'  # Minitest extra methods for common use cases.
 end
