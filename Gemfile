@@ -641,22 +641,23 @@ end
 #
 ############################################################################
 
-group :servers do
-  gem 'journey'  # Journey is a router. It routes requests.
-  gem 'passenger'  # Phusion Passenger is a bridge from then webserver to a Rails app.
-  gem 'thin'  # Ruby web server that is secure, stable, fast and extensible.
-  gem 'unicorn'  # Ruby web server that is secure, stable, fast and extensible.
+group :webserver do
+  gem 'journey', '>= 1.0.4'  # Journey is a router. It routes requests.
+  gem 'passenger', '>= 4.0.13'  # Phusion Passenger is a bridge from then webserver to a Rails app.
+  gem 'puma', '>= 2.5.1'  # Simple, fast, threaded, and highly concurrent HTTP 1.1 server.
+  gem 'thin', '>= 1.5.1'  # Ruby web server that is secure, stable, fast and extensible, based on Mongrel and EM.
+  gem 'unicorn', '>= 4.6.3'  # HTTP server designed to serve fast clients on high-bandwidth connections.
 end
 
 group :vital do
-  gem 'airbrake'  # Send application errors to hosted service; formerly Hoptoad.
-  gem 'exception_notification', :require => 'exception_notifier'  # Email us any Ruby exception.
-  gem 'hitimes'  # Fast, high resolution timer library for recording performance metrics.
-  gem 'newrelic_rpm'  # New Relic performance management system.
-  gem 'query_trace'  # Adds generated SQL statements to the Rails logs to ease debugging.
-  gem 'rackamole'  # Observe your web applications in the wild.
-  gem 'rails-footnotes'  # Add diagnostic information to the footer of each Rails page.
-  gem 'rails_metrics'  # Measurements for your app on top of ActiveSupport::Notifications.
+  gem 'airbrake', '>= 3.1.12'  # Send application errors to hosted service; formerly Hoptoad.
+  gem 'exception_notification', '>= 4.0.0' :require => 'exception_notifier'  # Email us any Ruby exception.
+  gem 'hitimes', '>= 1.2.1'  # Fast, high resolution timer library for recording performance metrics.
+  gem 'newrelic_rpm', '>= 3.6.6.147'  # New Relic performance management system.
+  gem 'query_trace', '>= 0.1.1'  # Adds generated SQL statements to the Rails logs to ease debugging.
+  gem 'rackamole', '>= 0.4.1'  # Observe your web applications in the wild.
+  gem 'rails-footnotes', '>= 3.7.9'  # Add diagnostic information to the footer of each Rails page.
+  gem 'rails_metrics', '>= 0.1'  # Measurements for your app on top of ActiveSupport::Notifications.
 end
 
 group :vlad do
