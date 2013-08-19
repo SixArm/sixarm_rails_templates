@@ -361,7 +361,7 @@ end
 ############################################################################
 
 group :api do
-  gem 'active_merchant'  # Simple payment abstraction library by Shopify.
+  gem 'activemerchant'  # Simple payment abstraction library by Shopify.
   gem 'aws' # Amazon Web Services including EC2, S3, SQS, SimpleDB, etc.
   gem 'aws-s3'  # Amazon Web Services: Simple Storage Services (S3) REST API.
   gem 'bliptv' # Blip.tv API for videos and user accounts
