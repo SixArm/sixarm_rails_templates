@@ -4,8 +4,7 @@
 #
 #     go_create_dir msg, "app/foo"
 #     #=>
-#     mkdir -p app/foo
-#     touch app/foo/.keep
+#     mkdir -p app/foo && touch app/foo/.keep
 #
 def go_create_dir(msg, dir)
   go(msg || "Create directory #{path}") do
