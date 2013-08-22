@@ -3,6 +3,6 @@ def create_dir_for_api?
 end
 
 def create_dir_for_api!
-  go_create_dir "Create a directory for API", "app/api"
+  go_create_dir "Create directory for API", "app/api"
 end
 

@@ -3,5 +3,5 @@ def create_dir_for_decorators?
 end
 
 def create_dir_for_decorators!
-  go_create_dir "Create a directory for decorators", "app/decorators"
+  go_create_dir "Create directory for decorators", "app/decorators"
 end
