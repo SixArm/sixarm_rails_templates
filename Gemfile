@@ -77,6 +77,12 @@ group :system do
   gem 'whenever'  # Cron job wrapper for writing and deploying timed jobs.
 end
 
+group :config do
+  gem 'figaro'  # Simple Rails app configuration using ENV key-value pairs.
+  gem 'simpleconfig'  # Multi-environment configuration
+end
+
+
 ############################################################################
 #
 # Authentication & Authorization
@@ -93,8 +99,10 @@ group :devise do
 end
 
 group :omniauth do
+  gem 'omniauth'  # Rack middleware to authenticate with just about anything. [?missing omniauth/password]
   #gem 'oa-oauth', :require => 'omniauth/oauth'  # OAuth strategies for OmniAuth. [requires old multi_xml]
-  #gem 'omniauth'  # Rack middleware to authenticate with just about anything. [missing omniauth/password]
+  gem 'omniauth-twitter'  # Auth via Twitter.
+  gem 'omniauth-github'  # Auth via GitHub.
 end
 
 group :warden do
@@ -137,6 +145,7 @@ end
 group :internationalization do
   gem 'i18n'  # Internationalization and localization solution.
   gem 'i18n_routing'  # Translate Rails routes with ease.
+  gem 'i18n-js' ? 
 end
 
 group :css do
@@ -147,6 +156,7 @@ group :css do
 end
 
 group :javascript do
+  gem 'coffee-rails', '~> 4.0.0'  # Coffescript for Rails 4. ?
   gem 'coffee-script', '>= 2.2.0'  # Ruby bridge to the JS CoffeeScript compiler.
   gem 'coffee-script-source', '>= 1.6.3' # Good looking language that compiles into JavaScript.
   gem 'execjs', '>= 1.4.0'  # Enables running JavaScript code from Ruby.
@@ -171,6 +181,7 @@ end
 group :markup do
   gem 'builder'  # Facilitates structured data like XML markup and events.
   gem 'haml'  # HTML Abstraction Markup Language for writing elegant documents.
+  gem 'haml_assets'  # HAML for the asset pipeline. ?
   gem 'happymapper'  # XML to object mapping library. 
   gem 'hippo'  # Simple DSL to generate and parse HIPAA transaction sets.
   gem 'nokogiri'  # Parser for HTML, XML, SAX, and Reader with XPath and CSS selectors.
@@ -462,8 +473,8 @@ group :rspec do
   gem 'rspec-core'  # RSpec runner and example groups.
   gem 'rspec-expectations'  # RSpec matchers for should and should_not.
   gem 'rspec-mocks'  # RSpec test double framework with stubbing and mocking.
-  gem 'rspec-rails'  # RSpec version 2.x for Rails version 3.x.
-  gem 'shoulda-matchers' # RSpec testing matchers for Rails 3.x.
+  gem 'rspec-rails'  # RSpec version 2.x for Rails.
+  gem 'shoulda-matchers' # RSpec testing matchers for Rails.
 end
 
 group :jasmine do  
@@ -497,7 +508,8 @@ end
 
 group :doubles do
   gem 'bourne'  # Extends mocha with spies to track and query our mocks and stubs.
-  gem 'forgery', '>= 0.5.0'  # Mock data generator for names, places, emails, etc.=
+  gem 'forgery', '>= 0.5.0'  # Mock data generator for names, places, emails, etc.
+  gem 'faker' ? # Mock data generator for names, places, emails, etc.
   gem 'mocha', '>= 0.14.0', :require => false  # Mocking and stubbing library for test doubles.
   gem 'rr'  # Test double framework for mocks, stubs, fakes, spies, proxies.
   gem 'timecop'  # Mocks Ruby Time.now, Date.now, DateTime.now for time travel.
@@ -507,7 +519,7 @@ group :interceptors do
   gem 'fakeweb'  # Helper for faking web requests in Ruby at a global level.
   gem 'sham_rack'  # Plumbs HTTP requests into Rack to stub HTTP services.
   gem 'vcr'  # Record and replay your test suite's HTTP interactions.
-  gem 'webmock'  # Stubs HTTP requests and setting expectations on HTTP requests.
+  gem 'webmock', require: false  # Stubs HTTP requests and setting expectations on HTTP requests.
 end
 
 group :quality do
@@ -521,7 +533,7 @@ group :quality do
   gem 'reek'  # Detects code smells like coupling, clumping, large areas, short names.
   gem 'roodi'  # Ruby Object Oriented Design Inferometer: parses code to warn on design issues.
   gem 'rails_best_practices', '>= 1.14.0'  # Code metric tool parses ./vendor, spec, test, features, etc.
-  gem 'simplecov'  # Code coverage analyzer for Ruby 1.9+
+  gem 'simplecov', require: false  # Code coverage analyzer for Ruby 1.9+
   gem 'simplecov-html'  # HTML output formatter for SimpleCov.
   gem 'simplecov-rcov-text'  # Text output formatter for SimpleCov to create a metric_fu rcov.txt
   gem 'sourcify'  # Workarounds before ruby-core has Proc#to_source & friends.
@@ -701,3 +713,47 @@ end
 #group :rack do
 #  gem 'rack-bouncer'  # Redirects older browsers to BrowseHappy.com or elsewhere. [requires Ruby 1.8.7]
 #end
+
+
+############################################################################
+#
+#  To Consider
+#
+############################################################################
+
+# Security
+# gem 'secure_headers'
+
+# Miscellanea
+# gem 'google-analytics-rails'
+# gem 'http_accept_language'
+
+# gem 'handlebars_assets'
+gem 'jquery-turbolinks'
+gem 'less-rails'
+gem 'sass-rails', '~> 4.0.0'
+gem 'twitter-bootstrap-rails', github: 'diowa/twitter-bootstrap-rails', branch: 'fontawesome-3.2.1'
+
+group :development, :test do
+  gem 'delorean'
+  gem 'factory_girl_rails'
+  gem 'pry'
+  gem 'pry-rails'
+end
+
+group :development do
+  gem 'bullet'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end
+
+group :test do
+  gem 'coveralls', require: false
+  gem 'email_spec'
+  gem 'selenium-webdriver'
+end
+
+group :staging, :production do
+  gem 'rails_12factor'
+end
