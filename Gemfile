@@ -41,6 +41,7 @@ source 'http://gems.github.com'
 group :rails do
   gem 'rails', '4.0.0'  # Ruby On Rails, our main rapid development framework.
   gem 'turbolinks'  # Fast following of links by using AJAX and Rails Asset Pipeline.
+  gem 'breach-mitigation-rails'  # Stronger security for BREACH/CRIME attacks.
 end
 
 group :assets do
