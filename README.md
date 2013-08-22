@@ -51,7 +51,9 @@ To learn more about Rails::Generators::Actions:
 
 ## Changes
 
-* 2013-08-20 1.0.7 New step: 'create_dir_for_api' to make app/api directory
+* 2013-08-22 1.0.9 New step: 'create_dir_for_presenters' to make app/presenters/.keep
+* 2013-08-21 1.0.8 New step: 'create_dir_for_decorators' to make app/decorators/.keep
+* 2013-08-20 1.0.7 New step: 'create_dir_for_api' to make app/api/.keep
 * 2013-08-19 1.0.6 New step: 'filter_parameter_logging' to e.g. exclude password confirmation
 * 2013-08-16 1.0.5 New step: 'get_database_yml' gets config/database.yml from any location
 * 2013-08-16 1.0.4 New step: 'unversion_database_yml' to remove config/database.yml from git

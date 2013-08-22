@@ -7,4 +7,5 @@ get_database_yml
 filter_parameter_logging
 create_dir_for_api
 create_dir_for_decorators
+create_dir_for_presenters
 bundle_install
