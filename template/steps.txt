@@ -6,6 +6,7 @@ get_gemfile
 get_database_yml
 filter_parameter_logging
 ban_spiders
+create_contributing_file
 create_license_file
 create_dir_for_api
 create_dir_for_decorators

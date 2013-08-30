@@ -59,7 +59,8 @@ Rails templates and starter apps:
 
 ## Changes
 
-* 2013-08-24 1.1.1 New step: 'create_license_file' to create a new LICENSE.txt file
+* 2013-08-25 1.1.2 New step: 'create_contributing_file'
+* 2013-08-24 1.1.1 New step: 'create_license_file'
 * 2013-08-23 1.1.0 New step: 'ban_spiders' for public/robots.txt User-agent and Disallow
 * 2013-08-22 1.0.9 New step: 'create_dir_for_presenters' to make app/presenters/.keep
 * 2013-08-21 1.0.8 New step: 'create_dir_for_decorators' to make app/decorators/.keep
