@@ -59,6 +59,7 @@ Rails templates and starter apps:
 
 ## Changes
 
+* 2013-08-27 1.1.4 New step: 'remove_rails_favicon' to delete public/favicon.ico
 * 2013-08-26 1.1.3 New step: 'create_changes_file' to touch CHANGES file suitable for most projects
 * 2013-08-25 1.1.2 New step: 'create_contributing_file' to touch CONTRIBUTING file as per GitHub
 * 2013-08-24 1.1.1 New step: 'create_license_file' to touch LICENSE file suitable for most projects
