@@ -1,5 +1,5 @@
 def create_dir_for_api?
-  yes? "Create a directory for app/api? (y/n)"
+  yes? "Create a directory for API? [app/api/] (y/n)"
 end
 
 def create_dir_for_api!

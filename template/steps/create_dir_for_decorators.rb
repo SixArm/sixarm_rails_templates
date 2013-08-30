@@ -1,5 +1,5 @@
 def create_dir_for_decorators?
-  yes? "Create a directory for app/decorators? (y/n)"
+  yes? "Create a directory for decorators? [app/decorators/] (y/n)"
 end
 
 def create_dir_for_decorators!
