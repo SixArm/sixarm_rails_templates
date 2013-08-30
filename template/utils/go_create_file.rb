@@ -8,6 +8,6 @@
 #
 def go_create_file(msg, path, *args, &block)
   go(msg || "Create file #{path}") do
-    create_file(path, args, block)
+    run "touch #{path}"
   end
 end
