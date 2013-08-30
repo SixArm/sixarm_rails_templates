@@ -6,6 +6,7 @@ get_gemfile
 get_database_yml
 filter_parameter_logging
 ban_spiders
+remove_rails_index
 remove_rails_image
 remove_rails_favicon
 create_changes_file
