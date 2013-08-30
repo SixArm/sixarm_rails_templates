@@ -40,7 +40,9 @@ To learn more about Rails templates:
 
   http://blog.madebydna.com/all/code/2010/10/11/cooking-up-a-custom-rails3-template.html
 
-To learn more about Thor::Actions:
+To learn more about Thor and Thor::Actions:
+
+  https://github.com/erikhuda/thor/
 
   http://rdoc.info/rdoc/wycats/thor/blob/f939a3e8a854616784cac1dcff04ef4f3ee5f7ff/Thor/Actions.html
 
@@ -48,9 +50,16 @@ To learn more about Rails::Generators::Actions:
 
   http://github.com/rails/rails/blob/master/railties/lib/rails/generators/actions.rb
 
+Rails templates and starter apps:
+
+  https://github.com/nileshtrivedi/rails-starter-app
+
+  https://github.com/RailsApps/rails3-application-templates
+
 
 ## Changes
 
+* 2013-08-23 1.1.0 New step: 'ban_spiders' for public/robots.txt User-agent and Disallow
 * 2013-08-22 1.0.9 New step: 'create_dir_for_presenters' to make app/presenters/.keep
 * 2013-08-21 1.0.8 New step: 'create_dir_for_decorators' to make app/decorators/.keep
 * 2013-08-20 1.0.7 New step: 'create_dir_for_api' to make app/api/.keep

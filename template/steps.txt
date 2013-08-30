@@ -5,6 +5,7 @@ get_gitignore
 get_gemfile
 get_database_yml
 filter_parameter_logging
+ban_spiders
 create_dir_for_api
 create_dir_for_decorators
 create_dir_for_presenters
