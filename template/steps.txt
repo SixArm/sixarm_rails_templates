@@ -15,4 +15,6 @@ create_license_file
 create_dir_for_api
 create_dir_for_decorators
 create_dir_for_presenters
+create_dir_for_generate
+create_dir_for_scaffolds
 bundle_install
