@@ -59,6 +59,7 @@ Rails templates and starter apps:
 
 ## Changes
 
+* 2013-09-06 1.1.9 New step: 'create_env_file' to make .env and 'unversion_env'
 * 2013-08-31 1.1.8 New step: 'create_dir_for_scaffolds' to make config/generate/scaffolds/.keep
 * 2013-08-30 1.1.7 New step: 'create_dir_for_generate' to make config/generate/.keep
 * 2013-08-29 1.1.6 New step: 'remove_rails_index' to delete public/index.html

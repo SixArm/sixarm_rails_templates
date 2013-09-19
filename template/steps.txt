@@ -1,3 +1,5 @@
+create_env_file
+unversion_env_file
 unversion_database_yml
 get_gitignore_by_github
 get_gitignore_by_sixarm
