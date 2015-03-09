@@ -1,4 +1,4 @@
-# SixArm.com » Rails » Templates
+# Rails » Templates
 
 * Doc: <http://sixarm.com/sixarm_rails_templates/doc>
 * Gem: <http://rubygems.org/gems/sixarm_rails_templates>
