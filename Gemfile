@@ -20,7 +20,7 @@
 #
 # We group the gems the way that helps our developers learn about them.
 # You can arrange the gems as you like, such as alphabetically.
-# 
+#
 # A couple of the gems have preconditions for installing,
 # depending on your system and what you already have installed.
 # Here are commands that we run on our systems before we bundle:
@@ -146,7 +146,7 @@ end
 group :internationalization do
   gem 'i18n'  # Internationalization and localization solution.
   gem 'i18n_routing'  # Translate Rails routes with ease.
-  gem 'i18n-js' ? 
+  gem 'i18n-js' ?
 end
 
 group :css do
@@ -183,7 +183,7 @@ group :markup do
   gem 'builder'  # Facilitates structured data like XML markup and events.
   gem 'haml'  # HTML Abstraction Markup Language for writing elegant documents.
   gem 'haml_assets'  # HAML for the asset pipeline. ?
-  gem 'happymapper'  # XML to object mapping library. 
+  gem 'happymapper'  # XML to object mapping library.
   gem 'hippo'  # Simple DSL to generate and parse HIPAA transaction sets.
   gem 'nokogiri'  # Parser for HTML, XML, SAX, and Reader with XPath and CSS selectors.
   gem 'ParseTree'  # Extracts the parse tree for Ruby code and returns a sexp.
@@ -228,7 +228,7 @@ group :controllers do
 end
 
 group :sanitize do
-  gem 'sanitize' # Sanitize is a whitelist-based HTML sanitizer. 
+  gem 'sanitize' # Sanitize is a whitelist-based HTML sanitizer.
   gem 'acts_as_sanitiled'  # Textiles and sanitizes columns to your specification.
   gem 'sanitize-url'  # Accepts a URL and returns one with JavaScript removed.
   gem 'sanitized_attributes'  # Automatic sanitization of incoming data for Ruby and Rails.
@@ -247,19 +247,19 @@ end
 ############################################################################
 
 group :databases do
-  gem 'cube-ruby', '>= 0.0.3', require: 'cube'  # Time series data collection & analysis.	
+  gem 'cube-ruby', '>= 0.0.3', require: 'cube'  # Time series data collection & analysis.
   #gem 'cassandra'  # Ruby connection to Cassandra distributed database. [interferes with ActiveSupport]
   gem 'dalli', '>= 2.6.4'  # High performance memcached client for Ruby.  gem 'memcached'  # Ruby interface to the libmemcached C client.
   gem 'mysql2', '~> 0.3.13'  # Improved Ruby client library for MySQL with non-blocking features.
   gem 'pg'  # Ruby client library for PostgreSQL relational database.
   gem 'redis'  # Ruby client library for the Redis key value storage engine.
-  gem 'redis-namespace'  # Adds a Redis::Namespace class to namespace Redis keys. 
+  gem 'redis-namespace'  # Adds a Redis::Namespace class to namespace Redis keys.
   gem 'sqlite3', '~> 1.3.7'  # Temporary lightweight database especially for testing.
 end
 
 group :mongo do
-  gem 'mongo', MONGO_VERSION = '1.9.1' # Ruby driver for MongoDB, the key-value database. 
-  gem 'bson', MONGO_VERSION   # Ruby Binary JSON serialization. 
+  gem 'mongo', MONGO_VERSION = '1.9.1' # Ruby driver for MongoDB, the key-value database.
+  gem 'bson', MONGO_VERSION   # Ruby Binary JSON serialization.
   gem 'bson_ext', MONGO_VERSION  # C extensions to accelerate Binary JSON serialization.
 end
 
@@ -313,7 +313,7 @@ end
 
 group :money do
   gem 'cashrb'  # Work with Money/Currency without the hassle of Floats; phases out 'money'.
-  gem 'eu_central_bank'  # Calculate exchange rates from European Central Bank. 
+  gem 'eu_central_bank'  # Calculate exchange rates from European Central Bank.
   gem 'google_currency'  # Ruby Money::Bank interface for the Google Currency exchange data.
   gem 'money'  # Library for dealing with money and currency conversion; phased out by 'cashrb'.
 end
@@ -388,7 +388,7 @@ group :api do
   gem 'imdb'  # Internet Movie Database API.
   gem 'linkedin'  # LinkedIn API for social networking.
   gem 'mixpanel'  # Track events in Mixpanel service via Rack.
-  gem 'pivotal-tracker'  # Provides ActiveRecord-style interface for the Pivotal Tracker API. 
+  gem 'pivotal-tracker'  # Provides ActiveRecord-style interface for the Pivotal Tracker API.
   gem 'rapns'  # Apple Push Notification Service with Rails 3.
   gem 'tumblr' # Tumblr blog posting API.
   gem 'twitter'  # Twitter REST and Search APIs.
@@ -401,7 +401,7 @@ end
 
 group :http do
   #gem 'cramp'  # Fully asynchronous IO built on top of EventMachine for many connections. [requires Rails 3.0]
-  gem 'curb', '>= 0.8.3'  #  Ruby bindings for libcurl client-side URL transfer library. 
+  gem 'curb', '>= 0.8.3'  #  Ruby bindings for libcurl client-side URL transfer library.
   gem 'em-http-request'  # Async HTTP Request client based on EventMachine.
   gem 'eventmachine'  # Event driven i/o for network communications and web interaction.
   gem 'excon'  # EXtended http(s) CONnections.
@@ -463,13 +463,13 @@ group :minitest do
   gem 'minitest', '>= 4.2.0'  # Ruby's core TDD, BDD, mocking, and benchmarking.
   gem 'minitest-capybara', '>= 0.4.1'  #  Add Capybara driver switching parameters to minitest/spec.
   gem 'minitest-matchers', '>= 0'  # RSpec/Shoulda-style matchers for minitest.
-  gem 'minitest-spec-rails', '>= 4.7.4'  # Drop in MiniTest::Spec support for Rails. 
+  gem 'minitest-spec-rails', '>= 4.7.4'  # Drop in MiniTest::Spec support for Rails.
   gem 'miniskirt', '>= 1.2.1'  # Factory creators that are streamlined and simple.
   gem 'capybara_minitest_spec', '>= 1.0.0'  # MiniTest::Spec expectations for Capybara node matchers.
   gem 'sixarm_ruby_minitest_extensions', '= 1.0.5'  # Minitest extra methods for common use cases.
 end
 
-group :rspec do 
+group :rspec do
   gem 'rspec'  # Behavior Driven Development (BDD) for Ruby
   gem 'rspec-core'  # RSpec runner and example groups.
   gem 'rspec-expectations'  # RSpec matchers for should and should_not.
@@ -478,16 +478,16 @@ group :rspec do
   gem 'shoulda-matchers' # RSpec testing matchers for Rails.
 end
 
-group :jasmine do  
+group :jasmine do
   gem 'evergreen', :require => 'evergreen/rails' # Run Jasmine tests in the app.
   gem 'jasmine', '>= 1.3.2'  # Test JavaScript without any framework dependencies.
   gem 'jasmine-headless-webkit'  # Runs Jasmine tests via QtWebKit widget.
 end
 
-group :cucumber do 
+group :cucumber do
   gem 'aruba'  # Cucumber extension for command line applications.
   gem 'bermuda'  # Cucumber steps for jQuery UI interactions with capybara.
-  gem 'cucumber', '>= 1.3.6', group: [:development, :test] # Behavior Driven Development with business-readable DSL. 
+  gem 'cucumber', '>= 1.3.6', group: [:development, :test] # Behavior Driven Development with business-readable DSL.
   gem 'cucumber-rails'  # Cucumber BDD generators and runtime for Rails.
   gem 'gherkin'  # Fast lexer/parser for the Gherkin BDD cucumber syntax.
 end
@@ -598,7 +598,7 @@ group :guard do
   gem 'guard-minitest', '>= 0.5.0'  # Runs MiniTest tests, much like autotest.
   gem 'guard-rails', '>= 0.4.7'  # Restart the Rails development server automatically.
   gem 'guard-rails-assets', '>= 0.1.3' # Compiles Rails 3.x assets.
-  gem 'guard-rails_best_practices', '>= 0.1.3'  # Code metric tool for quality of rails code. 
+  gem 'guard-rails_best_practices', '>= 0.1.3'  # Code metric tool for quality of rails code.
   gem 'guard-readme-on-github', '>= 0.0.1'  # Preview your README.md as if it was on github.
   gem 'guard-rspec', '>= ?'  # Runs rspec tests.
   gem 'guard-sass', '>= 1.3.2'  # Compiles SASS files to CSS.
@@ -676,7 +676,7 @@ end
 group :vlad do
   gem 'vlad', '>= 2.6.1'  # Pragmatic application deployment automation.
   gem 'vlad-git', '>= 2.2.0'  # Vlad plugin for git version control.
-  gem 'vlad-extras', '>= 0.7.3'  # Vlad plugin for assets, symlinks, nginx, node, monit and more. 
+  gem 'vlad-extras', '>= 0.7.3'  # Vlad plugin for assets, symlinks, nginx, node, monit and more.
 end
 
 ############################################################################
@@ -750,7 +750,6 @@ group :development do
 end
 
 group :test do
-  gem 'coveralls', require: false
   gem 'email_spec'
   gem 'selenium-webdriver'
 end
